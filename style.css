@@ -1,0 +1,231 @@
+/* Font Link */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* CSS Reset */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Variable Declaration */
+
+:root {
+  --color-red: #ea5353;
+  --color-cyan: #45d3d3;
+  --color-orange: #fcaf4a;
+  --color-blue: #549ef2;
+  --color-dark-blue: #4c4e61;
+  --color-grayish-blue: #a3a5ae;
+  --color-light-gray: #fafafa;
+  --font-primary: 1.5rem;
+  --font-light: 200;
+  --font-medium: 400;
+  --font-bold: 600;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--color-light-gray);
+}
+
+/* Utility Classes */
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Main Section Starts Here */
+
+.leading {
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.leading__text {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.leading__text--light {
+  font-weight: var(--font-light);
+  color: var(--color-grayish-blue);
+}
+
+.leading__text--bold {
+  font-weight: var(--font-bold);
+  color: var(--color-dark-blue);
+}
+
+.leading__paragraph {
+  font-size: 0.9rem;
+  width: 45%;
+  margin: 0 auto;
+  font-weight: var(--font-light);
+  color: var(--color-grayish-blue);
+}
+
+.box {
+  background-color: #fff;
+  height: 200px;
+  border-radius: 0.5rem;
+  width: 250px;
+  box-shadow: 0 10px 15px -3px rgba(76, 78, 97, 0.35),
+    0 4px 6px -2px rgba(76, 78, 97, 0.35);
+}
+
+.box__left {
+  border-top: 3px solid var(--color-cyan);
+}
+
+.box__middle--top {
+  border-top: 3px solid var(--color-red);
+}
+
+.box__middle--bottom {
+  border-top: 3px solid var(--color-orange);
+}
+
+.box__right {
+  border-top: 3px solid var(--color-blue);
+}
+
+.box__middle {
+  margin: 0 1rem;
+  padding: 0.8rem 0.5rem;
+}
+
+.box__middle--top {
+  margin-bottom: 1rem;
+}
+
+.box__content {
+  margin-left: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.box__heading {
+  font-weight: var(--font-bold);
+  color: var(--color-dark-blue);
+}
+
+.box__paragraph {
+  padding: 1rem;
+  padding-left: 0;
+  font-weight: var(--font-light);
+  color: var(--color-grayish-blue);
+}
+
+.image__container {
+  width: 40px;
+  height: 50px;
+  right: 1.8rem;
+  bottom: 1rem;
+}
+
+.image__container img {
+  width: 100%;
+}
+
+/* Footer Starts Here */
+
+footer {
+  right: 1rem;
+  bottom: 1rem;
+}
+
+footer p {
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+  color: var(--color-blue);
+}
+
+footer p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1023px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 92%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .container {
+    width: 96%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 98%;
+    margin: 0 auto;
+  }
+}
